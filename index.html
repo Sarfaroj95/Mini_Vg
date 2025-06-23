@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Blog</title>
   <meta charset="utf-8">
@@ -9,177 +10,159 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/mystyle1.css">
 </head>
+
 <body>
-	<div class="container">
+  <div class="container">
 
-  <h2 style="color: white;"><span style="font-size: 18px;">Vigo:</span> Jeet</h2>
-  <ul class="nav nav-tabs">
-    <li id="hd1" class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">To Day List</a></li>
-    <li><a data-toggle="tab" href="#menu2">Luck Test</a></li>
-    <li><a data-toggle="tab" href="#menu3">Result</a></li>
-  </ul>
+    <h2 style="color: white;"><span style="font-size: 18px;">Vigo:</span> Jeet</h2>
+    <ul class="nav nav-tabs">
+      <li id="hd1" class="active"><a data-toggle="tab" href="#home">Home</a></li>
+      <li><a data-toggle="tab" href="#menu1">To Day List</a></li>
+      <li><a data-toggle="tab" href="#menu2">Luck Test</a></li>
+      <li><a data-toggle="tab" href="#menu3">Result</a></li>
+    </ul>
 
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active col-md-12">
-    		      <h3 style="color: yellow;">Rule</h3>
-      		
-      		<p style="font-size: 18px; color: white"> 1: Comment </p>
-      					<ul>
-      					<p style="font-size: 16px; color: yellow;">#Sl NO</p>
-      					<p style="font-size: 16px; color: yellow;">First: Name</p>
-      				    <p style="font-size: 16px; color: yellow;">Last: Name</p>
-      				</ul>
-      		<p style="font-size: 18px; color: white">2: Share </p>
-      		
-      		<div>
-									
-			<img src="gift/1st.jpg" style="width: 100%; height: 100%;">
-			<h3 style="text-align: center;">Your Winning Gift <span style="font-size: 14px;">From Amazon</span></h3>
-		</div>
-  	
-    </div>
-    
-
-
-    <div id="menu1" class="tab-pane fade col-md-12">
-      <h4>First Comment 1 - 50 My Dear Friends</h4>
-      <p>Shere Must</p>
-      <div class="container">
-      <table class="table">
-    <thead>
-      <tr class="info">
-        <th>#</th>
-        <th>Firstname</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr >
-        <td>1</td>
-        <td>Jeet</td>
-      </tr>
-     <tr>
-        <td>2</td>
-        <td>Debbie</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>John</td>
-      </tr>
-    </tbody>
-   </table>
-</div>
-
-    </div>
-
-
-
-    <div id="menu2" class="tab-pane fade">
-     
-      <div class="container " style="background-color: #9900ff; ">
-		<form method="get" action="./" onsubmit="rnd();return false;">
-			<div id="errors" style="color: red;"></div>
-			<h4 style="text-align: center;">Check Your Luck</h4>
-			<h3 style="text-align: center; color: yellow;">Today Only First Prize</h3>
-			
-			<fieldset style="width:55%; text-align: center; margin-left: 23%;">
-				<span style="color: white;">Prize Number</span> <br>
-				<input style="width: 40px;  font-size: 18px;" type="number" name="howmany" value="1" onchange="document.getElementById('howmany').innerHTML = 1 == this.value ? 'number' : 'numbers';"><br>
-				<span id="howmany" style="color: white;">number</span>
-				<span style="color: white;">between </span> <br>
-				<input style="width: 80px;  font-size: 18px;" type="number" name="min" value="1"> To 
-				<input style="width: 80px;  font-size: 18px;" type="number" name="max" value="100">
-				<!-- dont Show -->
-				<select name="sortem" style="display: none;">
-					<option value="not sorted">not sorted</option>
-					<option value="sorted">sorted</option>
-				</select>
-				<!--end dont Show -->
-			</fieldset>
-			<br>
-			<p >
-
-			<a  type="button" class="request"  data-toggle="modal" data-target="#lucky">
-				<button style="width: 200px; text-align: center; margin-left: 25%"  type="button" class="btn btn-warning  btn-md" value="Get random!" onclick="rnd();">Start</button>
-			</a>
-			<span style="display: none;">	<img id="ajax-loader" src="" alt="Picking..." style="display: none;"></span>
-			</p>
-			
-			
-			
-		</form>
-
-		<script type="text/javascript" src="js/myscript.js">
-		</script>
-
-		
-		<h2  style="text-align: center;">Result</h2>
-		<div >
-			<div id="result" style="font-size: 30px; color: yellow; font-weight: bold; padding-bottom: 25px; text-align: center;">Lucky No</div>
-		</div>
-		
-	</div>
-
-	<!-- waterless order section popup -->
-<div class="modal fade" id="lucky" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="margin-top: 5%; width: 80%; margin-left: 10%">
-        <div style=" background-color: #009900;" class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 style="text-align: center; font-weight: bold; color: white; font-style: font-family: "Arial Black", Gadget, sans-serif; " class="modal-title">Check Your Luck </h4>
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active col-md-12">
+        <h3 style="color: yellow;">Rule</h3>
+        <p style="font-size: 18px; color: white"> 1: Comment </p>
+        <ul>
+          <p style="font-size: 16px; color: yellow;">#Sl NO</p>
+          <p style="font-size: 16px; color: yellow;">First: Name</p>
+          <p style="font-size: 16px; color: yellow;">Last: Name</p>
+        </ul>
+        <p style="font-size: 18px; color: white">2: Share </p>
+        <div>
+          <img src="gift/1st.jpg" style="width: 100%; height: 100%;">
+          <h3 style="text-align: center;">Your Winning Gift <span style="font-size: 14px;">From Amazon</span></h3>
         </div>
-       
-        <div class="modal-body ">
-       <div class="col-md-5 agileits_w3layouts_about_counter_left" style="margin-top: 8%;">	
-							
-							<div class="un_service">
-							<a   class="request"  data-toggle="modal" data-target="#water_order">
-								<div>
-									<p style="font-size: 18px; padding: 2px; font-family: Times New Roman, Times, serif;background-color: #cc00cc;color: white;text-align: center;" >Time</p>
-									<img src="gift/clock.gif" style="width: 100%; height: 80%;">
-								</div>	
-								</a>
-							</div>
-							
-						</div>
+      </div>
+
+      <div id="menu1" class="tab-pane fade col-md-12">
+        <h4>First Comment 1 - 50 My Dear Friends</h4>
+        <p>Shere Must</p>
+        <div class="container">
+          <table class="table">
+            <thead>
+              <tr class="info">
+                <th>Rank</th>
+                <th>Firstname</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Jeet</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Debbie</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>John</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-       
-         <div class="modal-body " >
-         	<div class="row" style="width: 100%; height: 100%; ;">
-								
-							
-			</div>
+      </div>
+
+      <div id="menu2" class="tab-pane fade">
+        <div class="container " style="background-color: #9900ff; ">
+          <form method="get" action="./" onsubmit="rnd();return false;">
+            <div id="errors" style="color: red;"></div>
+            <h4 style="text-align: center;">Check Your Luck</h4>
+            <h3 style="text-align: center; color: yellow;">Today Only First Prize</h3>
+            <fieldset style="width:55%; text-align: center; margin-left: 23%;">
+              <span style="color: white;">Prize Number</span> <br>
+              <input style="width: 40px;  font-size: 18px;" type="number" name="howmany" value="1"
+                onchange="document.getElementById('howmany').innerHTML = 1 == this.value ? 'number' : 'numbers';"><br>
+              <span id="howmany" style="color: white;">number</span>
+              <span style="color: white;">between </span> <br>
+              <input style="width: 80px;  font-size: 18px;" type="number" name="min" value="1"> To
+              <input style="width: 80px;  font-size: 18px;" type="number" name="max" value="100">
+              <!-- dont Show -->
+              <select name="sortem" style="display: none;">
+                <option value="not sorted">not sorted</option>
+                <option value="sorted">sorted</option>
+              </select>
+              <!--end dont Show -->
+            </fieldset>
+            <br>
+            <p>
+              <a type="button" class="request" data-toggle="modal" data-target="#lucky">
+                <button style="width: 200px; text-align: center; margin-left: 25%" type="button"
+                  class="btn btn-warning  btn-md" value="Get random!" onclick="rnd();">Start</button>
+              </a>
+              <span style="display: none;"> <img id="ajax-loader" src="" alt="Picking..." style="display: none;"></span>
+            </p>
+          </form>
+
+          <script type="text/javascript" src="js/myscript.js">
+          </script>
+
+
+          <h2 style="text-align: center;">Result</h2>
+          <div>
+            <div id="result"
+              style="font-size: 30px; color: yellow; font-weight: bold; padding-bottom: 25px; text-align: center;">Lucky
+              No</div>
+          </div>
         </div>
-				<div class="row">
-					
-  					</div>
-      
-        <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+
+        <!-- waterless order section popup -->
+        <div class="modal fade" id="lucky" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" style="margin-top: 20%; width: 80%; margin-left: 10%">
+              <div style=" background-color: #009900;" class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 style="text-align: center; font-weight: bold; color: white; font-style: font-family: " Arial Black",
+                  Gadget, sans-serif; " class=" modal-title">Check Your Luck </h4>
+              </div>
+              <div class="modal-body ">
+                <div class="col-md-5 agileits_w3layouts_about_counter_left" style="margin-top: 8%;">
+                  <div class="un_service">
+                    <a class="request" data-toggle="modal" data-target="#water_order">
+                      <div>
+                        <p
+                          style="font-size: 18px; padding: 2px; font-family: Times New Roman, Times, serif;background-color: #cc00cc;color: white;text-align: center;">
+                          Timer</p>
+                        <img src="gift/clock.gif" style="width: 100%; height: 80%;">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-body ">
+                <div class="row" style="width: 100%; height: 100%; ;">
+
+                </div>
+              </div>
+              <div class="row">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+
+
+      <div id="menu3" class="tab-pane fade">
+        <div class="container" style="background-color: #c61aff">
+          <h2 style="text-align: center;">Winner</h2>
+          <div>
+            <img src="gift/jeet.jpg" style="width: 100%; height: 100%;">
+            <h3 style="text-align: center;">Winner Name</h3>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-    </div>
-
-
-
-    <div id="menu3" class="tab-pane fade">
-      <div class="container" style="background-color: #c61aff">
-      	<h2 style="text-align: center;">Winner</h2>
-      	<div>
-									
-			<img src="gift/jeet.jpg" style="width: 100%; height: 100%;">
-			<h3 style="text-align: center;">Winner Name</h3>
-		</div>	
-      </div>
-     
-    </div>
-  </div>
-</div>
-
-
 </body>
+
 </html>
